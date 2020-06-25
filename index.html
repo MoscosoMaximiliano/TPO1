@@ -10,8 +10,8 @@
 <body>
     <header> <!-- -->
         <div class="container">
-            <div class="logo">
-                <img src="LOGO.svg" alt="">
+            <div class="left">
+                <img class="logo"src="LOGO.svg" alt="">
             </div>
             <div class="user-info">
                 <button>Login</button>
@@ -40,22 +40,149 @@
 
         <section>
             <div class="container">
-                <div class="categories">
+                <div class="categories left">
                     <div class="title-categories general-title">Categories</div>
-                    <div class="category">
-                        <div class="title-category">
-                            <p>Category 1</p>
-                        </div>
-                        <div class="sub-category">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam, eum delectus officia, cupiditate sint necessitatibus illo libero, assumenda ducimus veniam excepturi. Consequatur alias veniam nulla ipsum nesciunt minus nemo.</p>
-                        </div>
+
+                    <button class="accordion">Category 1</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Category 2</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Category 3</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Category 4</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Category 5</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Category 6</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Category 7</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Category 8</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
                     </div>
                 </div>
-                <div class="featured">
-                    
+                <div class="general-title">Featured Products</div>
+                
+                <div class="container-product">
+                
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
                 </div>
-                <div class="offers">
-
+                <div class="general-title">Offers</div>
+                <div class="container-product">
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
+                    <div class="product">
+                        <img src="" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <br>
+                        <h3>Buy</h3>
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,5 +193,22 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
 </body>
 </html>
