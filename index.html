@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPO1</title>
+    
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> <!-- -->
@@ -21,11 +27,11 @@
     </header> 
     <main> <!-- Content -->
         <section>
-            <div class="contaienr">
+            <div class="container">
                 <div class="menu">
-                    <button>Home</button>
-                    <button>Markets</button>
-                    <button>Contact</button>
+                    <a href="index.html"><button>Home</button></a>
+                    <a href="markets.html"><button>Markets</button></a>
+                    <a href="contact.html"><button>Contact</button></a>
                 </div>
             </div>
             
@@ -41,147 +47,132 @@
         <section>
             <div class="container">
                 <div class="categories left">
-                    <div class="title-categories general-title">Categories</div>
+                    <div class="general-title title-categories">Categories</div>
 
-                    <button class="accordion">Category 1</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                    <button class="accordion">Notebook</button>
 
-                    <button class="accordion">Category 2</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                    <button class="accordion">Phones</button>
 
-                    <button class="accordion">Category 3</button>
+                    <button class="accordion">Mices</button>
                     <div class="panel">
-                        <p>Lorem ipsum...</p>
+                        <p>Wireless</p>
+                        <p>Wireless Power</p>
+                        <p>Wired</p>
+                        <p>Mobile</p>
                     </div>
 
-                    <button class="accordion">Category 4</button>
+                    <button class="accordion">Keyboards</button>
                     <div class="panel">
-                        <p>Lorem ipsum...</p>
+                        <p>Keypads</p>
+                        <p>Optical</p>
+                        <p>Mechanical</p>
+                        <p>Mecha-Membrane</p>
                     </div>
 
-                    <button class="accordion">Category 5</button>
+                    <button class="accordion">Headset</button>
                     <div class="panel">
-                        <p>Lorem ipsum...</p>
+                        <p>Speakers</p>
+                        <p>Console</p>
+                        <p>Wireed</p>
+                        <p>Wireless</p>
                     </div>
-                    <button class="accordion">Category 6</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
-                    <button class="accordion">Category 7</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
-                    <button class="accordion">Category 8</button>
-                    <div class="panel">
-                        <p>Lorem ipsum...</p>
-                    </div>
+                    <button class="accordion">Console</button>
+
+                    <button class="accordion">Backpacks</button>
+
+                    <button class="accordion">Mouse Pads</button>
+
                 </div>
                 <div class="general-title">Featured Products</div>
                 
-                <div class="container-product">
+                <div class="container-block">
                 
                     <div class="product">
-                        <img src="" alt="">
+                        <img src="img/products/BlackWidow-2019-Base.png" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="img/products/BlackWidow-Ultimate-2017-Base.png" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <button class="buy-button">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="img/products/Mamba-Elite-Base.png" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <button class="buy-button">Buy</button>
+                    </div>
+                    <div class="product">
+                        <img src="img/products/RZ01-02130100-R3U1.png" alt="">
+                        <h1>Product 1</h1>
+                        <h3>Price</h3>
+                        <h3>See</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
-                    </div>
-                    <div class="product">
-                        <img src="" alt="">
-                        <h1>Product 1</h1>
-                        <h3>Price</h3>
-                        <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
-                    </div>
-                    <div class="product">
-                        <img src="" alt="">
-                        <h1>Product 1</h1>
-                        <h3>Price</h3>
-                        <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
-                    </div>
-                    <div class="product">
-                        <img src="" alt="">
-                        <h1>Product 1</h1>
-                        <h3>Price</h3>
-                        <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                 </div>
                 <div class="general-title">Offers</div>
-                <div class="container-product">
+                <div class="container-block">
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                     <div class="product">
                         <img src="" alt="">
                         <h1>Product 1</h1>
                         <h3>Price</h3>
                         <h3>See</h3>
-                        <br>
-                        <h3>Buy</h3>
+                        <button class="buy-button">Buy</button>
                     </div>
                 </div>
             </div>
@@ -190,7 +181,7 @@
     </main> 
     <footer> <!-- Información de la tienda-->
         <div class="container">
-
+            Copyright © 2020 Razer Inc. All rights reserved. | Legal Terms | Privacy Policy | Cookie Policy
         </div>
     </footer>
 
@@ -210,5 +201,7 @@
         });
         }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
