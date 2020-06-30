@@ -15,31 +15,14 @@
 </head>
 <body>
     <header> <!-- -->
-        <div class="container">
-            <div class="left">
-                <img class="logo"src="LOGO.svg" alt="">
-            </div>
-            <div class="user-info">
-                <button>Login</button>
-                <button>Shopping Cart</button>
-            </div>
-        </div> 
-    </header> 
+        <div id="header"></div>
+    </header>
     <main> <!-- Content -->
-        <section>
-            <div class="container">
-                <div class="menu">
-                    <a href="index.html"><button>Home</button></a>
-                    <a href="markets.html"><button>Markets</button></a>
-                    <a href="contact.html"><button>Contact</button></a>
-                </div>
-            </div>
-            
-        </section>
+        <div id="menu"></div>
         <section>
             <div class="container">
                 <div class="slider">
-
+                    SLIDER
                 </div>
             </div>
         </section>
@@ -180,10 +163,14 @@
 
     </main> 
     <footer> <!-- Información de la tienda-->
-        <div class="container">
-            Copyright © 2020 Razer Inc. All rights reserved. | Legal Terms | Privacy Policy | Cookie Policy
-        </div>
+        <div id="footer"></div>
     </footer>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="include.js"></script>
 
     <script>
         var acc = document.getElementsByClassName("accordion");
