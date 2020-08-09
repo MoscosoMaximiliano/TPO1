@@ -391,16 +391,33 @@ div.market {
     text-align: center;
 }
 
+.errorsBox {
+    width: 320px;
+    height: auto;
+    margin: 0 10px 20px 10px;
+    background-color: #43d62c2c;
+    border-radius: 5px;
+    border: 1px solid var(--opaque-green);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.errorsBox:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+
 form {
     width: 60%;
     text-align: left;
 }
-input {
+input, textarea{
     color: white;
     text-align: center;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"], textarea {
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
@@ -417,7 +434,7 @@ input[type="submit"] {
 
 
 .map {
-    margin: 10px 10px 10px 0;
+    margin: 10px 60px 10px 60px;
     background-color: var(--gray-black);
     justify-content: center;
     align-content: center;
