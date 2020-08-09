@@ -96,22 +96,26 @@
                 if(name.value === '' || name.value == null)
                     messages.push("Name field its empty");
 
-                if(name.value.length < 4)
-                    messages.push("The name its too short");
-
-                if(name.value.length > 30)
-                    messages.push("The name its too long");
-                
-                if(ck_alphanumerics.test( name.value.length ))
+                else if(name.value.length < 4 && ck_alphanumerics.test( name.value.length ))
                 {
                     messages.push("The name can only contain alphanumeric characters");
+                    messages.push("The name its too short");
                 }
+                    
+
+                else if(name.value.length > 30 && ck_alphanumerics.test( name.value.length ))
+                {
+                    messages.push("The name its too long");
+                    messages.push("The name can only contain alphanumeric characters");
+                }
+                    
+                
 
 
                 if(email.value === '' || email.value == null)
                     messages.push("Email field its empty");
 
-                if(!validateEmail(email.value))
+                else if(!validateEmail(email.value))
                 {
                     messages.push("Enter a valid mail")
                 }
@@ -119,7 +123,7 @@
                 if(business.value === '' || business.value == null)
                     messages.push("Business field its empty");
 
-                if(business.value.length > 20)
+                else if(business.value.length > 20)
                 {
                     messages.push("Business message cannot be more than 20 characters")
                 }
@@ -127,12 +131,12 @@
                 if(message.value === '' || message.value == null)
                     messages.push("Message field its empty");
 
-                if(message.value.length < 10)
+                else if(message.value.length < 10)
                 {
                     messages.push("Message its too short")
                 }
 
-                if(message.value.length > 100)
+                else if(message.value.length > 100)
                 {
                     messages.push("Message its too long")
                 }
