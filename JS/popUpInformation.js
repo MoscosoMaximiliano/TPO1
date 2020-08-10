@@ -1,4 +1,5 @@
 function ShowInformation(idName) {
+
     const article = document.getElementById(idName);
 
     document.getElementById('POPImg').src = article.dataset.img;
