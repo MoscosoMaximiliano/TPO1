@@ -276,8 +276,8 @@ a.button:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 40%;
-    height: 100%;
+    width: auto;
+    height: auto;
     overflow: hidden;
 }
 .popupphoto img {
